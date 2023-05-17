@@ -13,7 +13,7 @@
 -   Para ejecutar el contenedor se debe ejecutar el siguiente comando:
 
 ```bash
-    docker run -d -p 1433:1433 -e 'ACCEPT_EULA=1' -e 'SA_PASSWORD=StrongPassw0rd' -e 'MSSQL_PID=Developer' --name sql mssql
+    docker run -d -p 1433:1433 -p:1434:1434 -e 'ACCEPT_EULA=1' -e 'SA_PASSWORD=StrongPassw0rd' -e 'MSSQL_PID=Developer' --name sql mssql
 ```
 
 NOTA: las contraseñas de MASSQL deben tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número
